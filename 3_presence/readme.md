@@ -59,7 +59,7 @@ This example is composed of this readme and one index.md
 - Open ```index.html``` pick a user name, and click start.  You will know that you are connected when you will see these sentences appear in your browswer:
 
 ```JavaScript
-You are now connected WebRTC
+You are now connected (WebRTC or RtccDriver)
 ```
 
 Once connected, notice the roster with a list of connected and not connected users.
