@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>My Rtcc Application: Presence </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script type="text/javascript" src="http://download.rtccloud.net/js/webappid/pocnickqualif/env/qualif/debug/true"></script>
+    <script type="text/javascript" src="http://download.rtccloud.net/js/webappid/YOUR_APP_IDENTIFIER"></script>
 <style type="text/css">
     body {
         font-family: Helvetica;
@@ -59,17 +59,16 @@
             // Define the optional parameters
             options = {
                 displayName : 'Callee',
-                debugLevel: '3',
-                hap: 'qualif/3/'
+                debugLevel: '3'
             },
             //Intialize Rtcc Function
             initializeRtcc = function (token) {
                 // Initialize the Main Object with App Identifier, Token, RtccType, options
-                rtcc = new Rtcc('pocnickqualif', token, 'internal', options);
+                rtcc = new Rtcc('YOUR_APP_IDENTIFIER', token, 'internal', options);
 
                 // Get the Connection Handler callback when the JavaScript is connected to the real-time client
 
-                var presenceIcons = {'0': '/imgs/offline.png', '7': '/imgs/away.png','8': '/imgs/busy.png', '15': '/imgs/online.png'};
+                var presenceIcons = {'0': 'imgs/offline.png', '7': 'imgs/away.png','8': 'imgs/busy.png', '15': 'imgs/online.png'};
                 var rosterUids = ['charlie', 'thomas', 'alexander'];
                 var rosterDisplayName = {'charlie': 'Charlie', 'thomas': 'Thomas', 'alexander': 'Alexander'};
                 rtcc.onRosterRetrieved = function (roster){
