@@ -101,9 +101,14 @@
                         break;
                     case 'loggedasotheruser':
                         // force connection, kick other logged users
-                         getToken(UID_USER, function (token){
+                        getToken(UID_USER, function (token){
                             rtcc.setToken(token);
                             rtcc.authenticate(1);
+                        });
+                        break;
+                    case 'disconnectedRtccDriver':
+                        getToken(UID_USER, function (token){
+                            rtcc.setToken(token);
                         });
                         break;
                     }
