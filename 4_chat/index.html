@@ -73,7 +73,7 @@
                 }
                 rtcc.onMessageReceived = function (message_id, uid, message){
                     currentMessageId++;
-                    rtcc.acknowledgeMessage(message_id, uid, "1");
+                    rtcc.acknowledgeMessage(message_id, uid, 1);
                     var message_dom = "<div'>From: " + uid + "<br/>TO: " + UID_USER + "<br/>MSG: " + message +"</div><br/><br/>";
                     document.getElementById('chat_container').innerHTML += message_dom;
                 }
