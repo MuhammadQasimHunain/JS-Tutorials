@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>My Rtcc Application: Presence </title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="//download.rtccloud.net/js/webappid/YOUR_APP_IDENTIFIER"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.js"></script>
+  <script type="text/javascript" src="presence.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 style="text-align:center;">Welcome to Rtcc App Presence Example</h1>
+    </div>
+    <div class="row">
+
+
+      <div class="well col-md-6 col-md-offset-1">
+
+        <div id="error" class="alert alert-danger collapse">
+          <strong>An error occurred:</strong>
+          <span id="error-content"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="currentUser">User</label>
+
+          <select class="form-control" id='currentUser'><option value='charlie'>Charlie</option><option value='thomas'>Thomas</option><option value='alexander'>Alexander</option></option></select>
+        </div>
+
+
+        <input type="button" id="start_btn" class="btn btn-lg btn-primary" value="Start"><br/>
+        <hr/>
+
+        <div id="once_connected" style="display:none;">
+
+          <div class="form-group">
+            <label for="currentUser">Set My Presence</label>
+            <select class="form-control"  id='presence_value'>
+              <option value="0">Hidden</option>
+              <option value="7">Away</option>
+              <option value="8">Busy</option>
+              <option value="15">Online</option>
+            </select>
+          </div>
+          
+          <input type="button" value="Set"  class="btn" id="set_presence" />
+          <br/>
+          <br/>
+
+          <div class="form-group">
+            <label> Get Presence</label>
+            <input class="form-control" type="text" placeholder='uid,uid,uid' id="get_presence" value="charlie,thomas"/>
+          </div>
+          <input type="button"  class="btn" id="get_presence_button" value="Get Presence">
+          <br>
+
+        </div>
+
+        <h4 id="connecting"></h4>
+        <h4 id="user_name"></h4>
+        <h4 id="stat"></h4>
+
+      </div>
+      <div class="col-md-3 well col-md-offset-1">
+        <h3>Roster</h3>
+        <div id='presence_container'></div>
+        <div id="presence-answer">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

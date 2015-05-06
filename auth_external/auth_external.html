@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>My Rtcc Application: authentication external</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://download.rtccloud.net/js/webappid/YOUR_APP_IDENTIFIER"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+  <script type="text/javascript" src="auth_external.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <h1 style="text-align:center;">Welcome to Rtcc External Authentication App</h1>
+    </div>
+
+    <div class="row">
+
+      <div class="well col-md-6 col-md-offset-1">
+
+        <div id="error" class="alert alert-danger collapse">
+          <strong>An error occurred:</strong>
+          <span id="error-content"></span>
+        </div>
+
+        <div class="form-group hide">
+          <label for="currentUser">User</label>
+          <select class="form-control" id='currentUser'>
+            <option value='external_user' selected="selected">My external user</option>
+          </select>
+        </div>
+
+        <input type="button" id="start_btn" class="btn btn-lg btn-primary" value="Start"><br/>
+        <hr/>
+
+        <div id="once_connected" style="display:none;">
+          <h3>Call</h3>
+          <div class="form-group">
+            <label for="user_to_call">Call User</label>
+            <select class="form-control" id='user_to_call'>
+              <option value='mike_doe'>Mike (parent)</option>
+              <option value='matt_doe'>Matt</option>
+              <option value='megan_doe'>Megan</option>
+            </select>
+          </div>
+          <input type="button" value="Call" id="call_button" class="btn"  />
+          <br/>
+          <br/>
+          <br>
+        </div>
+
+        <h4 id="connecting"></h4>
+        <h4 id="stat"></h4>
+
+      </div>
+
+      <div class="col-md-3 well col-md-offset-1">
+        <h3>Call Status</h3>
+        <h4 id="call">Not connected</h4>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
