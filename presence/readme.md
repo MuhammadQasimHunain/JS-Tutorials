@@ -3,7 +3,7 @@
 
 #### Prerequisites
 
-- [Authentication Tutorial](https://docs.sightcall.com/GD/01_javascript/Tutorials/01_js_authentication.html)
+- [Authentication Tutorial](https://docs.sightcall.com/gd/how-to/authenticate/)
 - [Authentication Code Example](https://github.com/sightcall/JS-Tutorials/tree/master/auth)
 
 

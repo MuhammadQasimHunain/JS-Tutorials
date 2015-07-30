@@ -65,7 +65,6 @@ var bindAuthCallbacks = function(rtcc, user_id) {
   rtcc.on('cloud.loggedasotheruser', function() {
     // force connection, kick other logged users
     getToken(user_id, function(token) {
-      rtcc.setToken(token);
       rtcc.forceAuthenticate();
     });
   })

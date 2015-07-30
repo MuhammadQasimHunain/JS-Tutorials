@@ -3,9 +3,7 @@
 
 This is an example of a SightCall authentication process
 
-For a full JavaScript API reference please refer to our [official documentation website](https://docs.sightcall.com/GD/01_javascript/).
-
-- [Quick-start RtccDriver and WebRTC](https://docs.sightcall.com/GD/01_javascript/01_jsquickstart.html)
+For a full JavaScript API reference please refer to our [official documentation website](https://docs.sightcall.com/gd).
 
 
 ### How to deploy the example
@@ -13,11 +11,9 @@ For a full JavaScript API reference please refer to our [official documentation 
 ##### Requirement
 
 - It is important that the project is served from a webserver and not from the file system when using WebRTC.
-- Be aware of your AppId, and understand what is a `UID` and a `Display Name`. All of them are described in our [definition page](https://docs.sightcall.com/GD/06_definitions.html).
+- Be aware of your AppId, and understand what is a `UID` and a `Display Name`. All of them are described in our [definition page](https://docs.sightcall.com/gd/definitions/).
 
-You can find more details about AppID, UID and Display Name [here](https://docs.sightcall.com/GD/01_javascript/01_jsquickstart.html)
-
-You also need to be able to get tokens out of the SightCall cloud. The fastest way to obtain a token is to use one of our Authentication Clients for backends. Description and samples are available [here](https://docs.sightcall.com/GD/04_backend/).
+You also need to be able to get tokens out of the SightCall cloud. The fastest way to obtain a token is to use one of our Authentication Clients for backends. Description and samples are available [here](https://docs.sightcall.com/gd/how-to/authenticate/).
 
 ##### Setting up the AppID and the Authentication URL
 
