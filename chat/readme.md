@@ -1,4 +1,4 @@
-# Sightcall JavaScript Presence
+# Sightcall JavaScript Chat
 
 
 #### Prerequisites
@@ -16,4 +16,4 @@ This example is composed of this readme and one index.html
 You are now connected (WebRTC or RtccDriver)
 ```
 
-Once connected you can send message to other users  by picking a user, adding message text and clicking send. Recieived/sent messages will be appended to the right column.
+Once connected you can send message to other users  by picking a user, adding message text and clicking send. Received/sent messages will be appended to the right column.
